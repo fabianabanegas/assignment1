@@ -3,105 +3,50 @@ import "./styles/styles.css"
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title> Cami Layé Okún ' DJ & Selector'</title>
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cami Layé Okún - DJ & Selector</title>
+    <link rel="stylesheet" href="styles.css">
 
-		<body>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="public/vinyl-player-video.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
 
-			<!-- Navigation -->
-		<nav>
-			<div class="nav-container">
-				<a href="/" class="logo">CAMI LAYÉ OKÚN</a>
-				<ul class="nav-links">
-					<li><a href="/" class="active">Home</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/news">News/Tour</a></li>
-					<li><a href="/playlist">Playlist</a></li>
-				</ul>
-			</div>
-		</nav>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">CAMI LAYÉ OKÚN</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tour.html">Tour</a></li>
+                <li><a href="playlists.html">Playlists</a></li>
+            </ul>
+        </div>
+    </nav>
 
-		<!-- Artist Section -->
-		<section class="Artist">
-			<div class="Artist-content">
-				<h1>CAMI LAYÉ OKÚN</h1>
-				<p class="subtitle">DJ • Selector • Radio Host</p>
-				<p class="tagline">Afro-Cuban • Caribbean • Tropical Grooves • 100% Vinyl</p>
-			</div>
-		</section>
-
-		<!-- Featured Section -->
-		<section class="featured">
-			<div class="container">
-				<h2>Latest from Insolar</h2>
-				<div class="featured-content">
-					<div class="featured-image"></div>
-					<div class="featured-text">
-						<h3>NTS Radio Show - Fortnightly</h3>
-						<p>Tune in to Insolar on NTS Radio for sunny music from around the world. Each episode features carefully curated vinyl selections spanning Afro-Cuban rhythms, tropical grooves, and rare gems from Latin America and the African diaspora.</p>
-						<a href="/playlist" class="btn-primary">Listen Now</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Quick Info Section -->
-		<section class="info-cards">
-			<div class="container">
-				<div class="card">
-					<div class="card-icon">🎵</div>
-					<h3>100% Vinyl</h3>
-					<p>Extensive collection of Cuban disco, Afro-Caribbean rarities, and Tropical Amazonian funky grooves</p>
-				</div>
-				<div class="card">
-					<div class="card-icon">🌍</div>
-					<h3>Global Sounds</h3>
-					<p>Bringing Latin American and African diaspora music to stages worldwide</p>
-				</div>
-				<div class="card">
-					<div class="card-icon">📻</div>
-					<h3>NTS Radio Host</h3>
-					<p>Host of 'Insolar' - fortnightly radio show curating sunny music from different parts of the world</p>
-				</div>
-			</div>
-		</section>
-
-		<!-- Next Show -->
-		<section class="next-show">
-			<div class="container">
-				<h2>Next Show</h2>
-				<div class="show-highlight">
-					<div class="show-date">
-						<span class="day">15</span>
-						<span class="month">NOV</span>
-					</div>
-					<div class="show-details">
-						<h3>Le Guess Who? Festival</h3>
-						<p class="location">Utrecht, Netherlands</p>
-						<p class="description">Join me for an evening of Afro-Cuban rhythms and tropical grooves at one of Europe's premier music festivals.</p>
-					</div>
-				</div>
-				<a href="/news" class="btn-secondary">View All Shows</a>
-			</div>
-		</section>
-
-		<!-- Footer -->
-		<footer>
-			<div class="container">
-				<div class="social-links">
-					<a href="https://www.instagram.com/camilayeokun/" target="_blank" aria-label="Instagram">Instagram</a>
-					<a href="https://www.facebook.com/camilayeokun/" target="_blank" aria-label="Facebook">Facebook</a>
-					<a href="https://www.nts.live" target="_blank" aria-label="NTS Radio">NTS Radio</a>
-					<a href="https://soundcloud.com" target="_blank" aria-label="SoundCloud">SoundCloud</a>
-				</div>
-				<p>&copy; 2025 Cami Layé Okún. All Rights Reserved.</p>
-			</div>
-		</footer>
-	</body>
+    <!-- Footer at bottom -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/camilayeokun/">Instagram</a>
+            <a href="https://www.facebook.com/camilayeokun/" >Facebook</a>
+            <a href="https://www.nts.live/shows/cami-laye-okun">NTS Radio</a>
+			<a href=https://soundcloud.com/camila-garc-a-valent-n>SoundCloud</a>
+        </div>
+        
+		<div>
+			<p>&copy; 2025 Cami Layé Okún. All Rights Reserved.            </p>
+		</div>
+    </footer>
+</body>
 </html>
-	
