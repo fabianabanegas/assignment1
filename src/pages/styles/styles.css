@@ -1,14 +1,14 @@
 :root {
-    /* New Color Palette */
-    --color-text: #f6f5ae;        /* vanilla - light yellow for text */
-    --color-text-secondary: #e8e79c;  /* Slightly darker vanilla for secondary text */
-    --color-primary: #2e86ab;     /* blue-ncs - primary blue */
-    --color-primary-hover: #3a9bc4;  /* Lighter blue for hover */
-    --color-accent: #f24236;      /* vermilion - red accent */
-    --color-highlight: #f5f749;   /* icterine - bright yellow for highlights */
+    /* ----Color Palette------*/
+    --color-text: #f6f5ae;      
+    --color-text-secondary: #e8e79c;  
+    --color-primary: #2e86ab;   
+    --color-primary-hover: #3a9bc4; 
+    --color-accent: #f24236;  
+    --color-highlight: #f5f749; 
 
     
-    /* Spacing & Typography */
+    /* ----- Typography style-----*/
     --font-family-base: 'Helvetica Neue', Arial, sans-serif;
     --space-16: 16px;
     --space-24: 24px;
@@ -28,15 +28,14 @@ body {
     line-height: 1.6;
     overflow: hidden;
     position: relative;
-    /* Background color fallback */
     background-color: #564138;
 }
 
-/* Video Background Container */
+/*----- Video Background ---*/
+
 .video-background {
     position: fixed;
-    flex-wrap: wrap;
-    top: 0;
+    top: 25%;
     left: 0;
     width: 100%;
     height: 200%;
@@ -48,24 +47,25 @@ body {
     position: absolute;
     top: 25%;
     left: 50%;
-    width: 100%;  /* Reduce from 100% */
-    height: 100%; /* Reduce from 100% */
+    width: 100%; 
+    height: 100%; 
     transform: translate(-50%, -50%);
-    object-fit: contain;  /* Show full video without cropping */
+    object-fit: contain;  
 }
 
 
-/* Dark overlay on video */
+
 .video-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(86, 65, 56, 0.5); /* van-dyke with transparency */
+    background: rgba(86, 65, 56, 0.5); 
 }
 
-/* Navigation - 150px from bottom, above footer */
+/*-------------navigation bar------*/
+
 nav {
     position: fixed;
     bottom: 150px;
@@ -73,14 +73,13 @@ nav {
     right: 0;
     display: flex;
     flex-wrap: wrap;
-    z-index: 1000;  /* Higher than footer's z-index: 500 */
+    z-index: 1000;  
 }
 
 .nav-container {
     max-width: 1200px;
     display: flex;
     margin: 0 auto;
-    padding: 0 var(--space-32);
     justify-content: space-between;
     align-items: center;
 }
@@ -118,7 +117,8 @@ nav {
     color: var(--color-text);
 }
 
-/* Footer - positioned at bottom of page */
+/*----Footer----*/
+
 footer {
     display: flex;
     flex-direction: row;
@@ -157,7 +157,9 @@ footer p {
     left: 10;
 }
 
-/* Responsive video for mobile/vertical orientation */
+
+/*-----responsiveness-----*/ 
+
 @media (max-width: 768px) {
     .video-background video {
         width: 100%;
@@ -166,7 +168,7 @@ footer p {
     }
 }
 
-/* Specifically for portrait orientation */
+
 @media (orientation: portrait) {
     .video-background video {
         width: 100%;
